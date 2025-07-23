@@ -8,7 +8,6 @@ public Character(String name, int hp){
         throw new IllegalArgumentException("初期設定に誤りがあるため、キャラクターを作成できませんでした");
     }
 }
-
     public final boolean isAlive(){
 
         return this.hp >0;

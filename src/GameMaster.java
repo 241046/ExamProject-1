@@ -4,6 +4,7 @@ public class GameMaster {
     public static void main(String[] args) {
         ArrayList<Character> party = new ArrayList<>();
         Hero hero = new Hero("勇者", 100, "剣");
+        SuperHero sh = new SuperHero(hero);
         Wizard wizard = new Wizard("魔法使い", 60, 20);
         Thief thief = new Thief("盗賊", 70);
         party.add(hero);
@@ -11,9 +12,9 @@ public class GameMaster {
         party.add(thief);
 
         ArrayList<Monster> monsters = new ArrayList<>();
-        Matango m = new Matango("お化けキノコ", 'A', 45);
-        Goblin g = new Goblin("ゴブリン", 'A', 50);
-        Slime s = new Slime("スライム", 'A', 40);
+        Matango m = new Matango('A', 45);
+        Goblin g = new Goblin('A', 50);
+        Slime s = new Slime('A', 40);
         monsters.add(m);
         monsters.add(g);
         monsters.add(s);
@@ -51,7 +52,7 @@ public class GameMaster {
         }
 
         System.out.println("\nダメージを受けた" + hero.getName() + "が突然光りだした!");
-        SuperHero sh = new SuperHero(hero);
+
         for (Monster h : monsters) {
             sh.attack(h);
         }
