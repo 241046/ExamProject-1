@@ -1,6 +1,12 @@
-public class Wizard extends Character{
+package creature.character;
+
+import creature.Character;
+import creature.Creature;
+import weapon.Weapon;
+
+public class Wizard extends Character {
     private int mp;
-    public Wizard(String name,int hp,int mp) {
+    public Wizard(String name, int hp, int mp, Weapon weapon) {
         super(name, hp);
         this.mp = mp;
     }
