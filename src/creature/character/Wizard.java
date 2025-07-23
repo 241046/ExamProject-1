@@ -6,8 +6,8 @@ import weapon.Weapon;
 
 public class Wizard extends Character {
     private int mp;
-    public Wizard(String name, int hp, int mp, Weapon weapon) {
-        super(name, hp);
+    public Wizard(String name, int hp, int mp,Weapon weapon) {
+        super(name, hp, weapon);
         this.mp = mp;
     }
     public void attack(Creature target) {
