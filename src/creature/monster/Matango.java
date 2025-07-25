@@ -11,4 +11,6 @@ public class Matango extends Monster {
         System.out.println("お化けキノコ" + this.getSuffix() + "は体当たり攻撃!" + target.getName() + "に6のダメージを与えた!");
         target.setHp(target.getHp()-6);
     }
-}
+
+    }
+

@@ -2,6 +2,7 @@ package creature.character;
 
 import creature.Character;
 import creature.Creature;
+import weapon.Weapon;
 
 public class Thief extends Character {
     public Thief(String name,int hp, Weapon weapon) {
@@ -9,7 +10,7 @@ public class Thief extends Character {
     }
 
     public void attack(Creature target){
-        System.out.println(getName() + "は素早く攻撃した!" + target.getName() + "に5のダメージを与えた!");
+        System.out.println(getName() + "は" + getWeapon().getName() + getWeapon().attackMessage() + target.getName() + "に5のダメージを与えた!");
         target.setHp(target.getHp()-5);
     }
 }
