@@ -1,10 +1,12 @@
 package weapon;
 
-public class Sword extends Weapon{
-    public Sword(String name, int damage){
-        super("剣",10);
+public class Sword extends Weapon {
+    public Sword() {
+        super("剣", 10);
     }
-    public String attackMessage(){
-        return "で切り付けた!";
+
+    @Override
+    public String attackMessage() {
+        return "で切りつけた！";
     }
 }
